@@ -15,7 +15,7 @@ const App = () => {
           opportunities.
         </h1>
       </div>}
-      <button id="toggle" onClick={()=>{setToggle(!isToggle)}}>Toggle</button>
+      <button id="toggle" onClick={()=>{setToggle(false)}}>Toggle</button>
     </div>
   );
 };
