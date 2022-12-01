@@ -3,7 +3,6 @@ import "../styles/App.css";
 
 const App = () => {
   const[isToggle,setToggle]=useState(true);
-const[count,setCount]=useState(0);
   return (
     <div id="main">
     {isToggle && <div id="welcome-div">
@@ -18,7 +17,7 @@ const[count,setCount]=useState(0);
         </h1>
       </div>
 }
-      <button id="toggle" onClick={(e)=>{ setCount(count+1);if(count===0)setToggle(false);if(count===1)setToggle(true);if(count===2)setToggle(true);}}>Toggle</button>
+      <button id="toggle" onClick={()=>{ setToggle(!isToggle)}}>Toggle</button>
     </div>
   );
 };
